@@ -14,4 +14,13 @@ const calculator = (a: number, b: number, op: Operation): number => {
     }
 }
 
-calculator(7, 7, 'divide');
+
+try {
+    console.log(calculator(1, 5, 'divide'));
+} catch (error: unknown) { 
+    let errorMessage = 'Something went wrong';
+    if (error instanceof Error) { 
+        errorMessage += error.message;
+    }
+    console.log(errorMessage);
+}
