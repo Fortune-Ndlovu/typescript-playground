@@ -6,8 +6,8 @@
   "scripts": {
     "ts-node": "ts-node",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "multiply": "ts-node multiplier.ts",
-    "calculate": "ts-node calculator.ts"
+    "multiply": "ts-node ./src/multiplier.ts",
+    "calculate": "ts-node ./src/calculator.ts"
   },
   "author": "",
   "license": "ISC",
